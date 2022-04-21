@@ -1,0 +1,301 @@
+While giving commands make sure to include the Keywords
+
+---------------------------------------------------------------------
+Wake-up Execution and start listening
+  Keywords: ("wake up","hello","omnitrix")
+
+  This command will wake up the Omnitrix and start the execution
+
+  Example:
+    "wake up"
+    "hello omnitrix"
+    "omnitrix"
+---------------------------------------------------------------------
+To exit the Omnitrix
+  Keywords: ("goodbye",good bye","see you later","goodnight","good night")
+
+  This command will close the Omnitrix and exit the program
+
+  Example:
+    "goodbye"
+    "good night omnitrix"
+    "see you later"
+---------------------------------------------------------------------
+To let Omnitrix sleep or go on standby
+  Keywords: ("sleep","standby","stand by","Go to sleep",
+            "you can sleep now","goodnight","good night")
+
+  This command will put the Omnitrix to sleep or standby mode
+  but it will not exit the program nad keep the Omnitrix running and
+  will be in listening mode
+
+  Example:
+    "sleep"
+    "standby"
+    "stand by"
+    "Go to sleep"
+    "you can sleep now"
+----------------------------------------------------------------------------
+To search on wikipedia
+  Keywords: ("wikipedia")
+
+  This command will search on wikipedia for the query given by the user
+
+  Example:
+    "wikipedia"
+    "search on wikipedia"
+----------------------------------------------------------------------------
+To search on google
+  Keywords: ("google")
+
+  This command will search on google for the query given by the user
+
+  Example:
+    "google"
+    "search on google"
+----------------------------------------------------------------------------
+To search on youtube
+  Keywords: ("youtube")
+
+  This command will search on youtube for the query given by the user
+
+  Example:
+    "youtube"
+    "search on youtube"
+    "open youtube"
+----------------------------------------------------------------------------
+To open spotify
+  Keywords: ("spotify")
+
+  This command will open spotify with the song name given by the user
+
+  Example:
+    "spotify"
+    "open spotify"
+    "play spotify"
+----------------------------------------------------------------------------
+To check weather
+  Keywords: ("weather")
+
+  This command will check the weather for the city given by the user
+
+  Example:
+    "weather"
+    "check weather"
+----------------------------------------------------------------------------
+To play songs 
+  Keywords: ("song","music","play music","play song")
+
+  This command will play the song given by the user on youtube directly
+
+  Example:
+    "play music"
+    "play song"
+    "song"
+    "music"
+----------------------------------------------------------------------------
+To get News
+  Keywords: ("news")
+
+  This command will get the top-headlines from the news api
+
+  Example:
+    "news"
+    "get news"
+    "tell me some news"
+    "get me some news"
+----------------------------------------------------------------------------
+To get Jokes
+  Keywords: ("joke","jokes","tell me a joke","tell me a joke")
+
+  This command will get a random joke from the pyjokes library
+
+  Example:
+    "joke"
+    "jokes"
+    "tell me a joke"
+----------------------------------------------------------------------------
+To get time
+  Keywords: ("time")
+
+  This command will get the time from the system
+
+  Example:
+    "time"
+    "what time is it"
+    "what is the time"
+    "what time"
+----------------------------------------------------------------------------
+To get date/day
+  Keywords: ("date","day")
+
+  This command will get the date from the system
+
+  Example:
+    "date"
+    "what is the date"
+    "what date is it"
+    "what day is it"
+    "what day"
+----------------------------------------------------------------------------
+To open chrome browser
+  Keywords: ("chrome","chrome browser")
+
+  This command will open chrome browser
+
+  Example:
+    "chrome"
+    "open chrome"
+    "open chrome browser"
+----------------------------------------------------------------------------
+To open firefox browser
+  Keywords: ("firefox","firefox browser")
+
+  This command will open firefox browser
+
+  Example:
+    "firefox"
+    "open firefox"
+    "open firefox browser"
+----------------------------------------------------------------------------
+To open brave browser
+  Keywords: ("brave","brave browser")
+
+  This command will open brave browser
+
+  Example:
+    "brave"
+    "open brave"
+    "open brave browser"
+----------------------------------------------------------------------------
+To open any application
+  Keywords: ("app","application","launch")
+
+  This command will open any application given by the user
+
+  Example:
+    "open an application"
+    "open app"
+    "launch"
+    "launch application"
+    "open application"
+----------------------------------------------------------------------------
+To take note or set reminder
+  Keywords: ("note","reminder","set reminder")
+
+  This command will set a reminder for the user
+
+  Example:
+    "set reminder"
+    "please note for me"
+    "take a note"
+    "reminder"
+----------------------------------------------------------------------------
+To know the reminder or notes
+  Keywords: ("remember")
+
+  This command will show the reminder or notes for the user
+
+  Example:
+    "remember"
+    "show me the notes"
+    "can you tell me what I have told you"
+
+----------------------------------------------------------------------------
+To set alarm
+  Keywords: ("alarm","set alarm")
+
+  This command will set an alarm for the user
+
+  Example:
+    "set alarm" -> Omnitrix will ask you to set the time for the alarm
+    Give the time in 12 hour format "5:00 pm" -> "five zero zero pm"
+                                    "1:09 am" -> "one zero nine am"
+                                    "4:36 pm" -> "four thirty six pm"                         
+----------------------------------------------------------------------------
+To take a screenshot
+  Keywords: ("screenshot","take a screenshot")
+
+  This command will take a screenshot of the screen
+
+  Example:
+    "take a screenshot"
+    "screenshot"
+----------------------------------------------------------------------------
+To use soome shortcuts on windows operating system
+  Keywords: ("home screen","desktop","minimize","show start","start menu",
+             "open settings","settings")
+
+  "home screen" -> This will show the home screen of the operating system
+  "desktop" -> This will show the desktop of the operating system
+  "minimize" -> This will minimize the current window
+  "show start" -> This will show the start menu of the operating system
+  "start menu" -> This will show the start menu of the operating system
+  "open settings" -> This will open the settings of the operating system
+  "settings" -> This will open the settings of the operating system
+
+  Example:
+    "home screen"
+    "desktop"
+    "minimize"
+    "show start"
+    "start menu"
+    "open settings"
+    "settings"
+    "show start menu"
+    "show desktop"
+----------------------------------------------------------------------------- 
+To increase the volume
+  Keywords: ("volume up","increase volume")
+
+  This command will increase the volume of the system
+
+  Example:
+    "increase volume"
+    "increase volume level"
+    "volume up"
+-----------------------------------------------------------------------------
+To decrease the volume
+  Keywords: ("volume down","decrease volume")
+
+  This command will decrease the volume of the system
+
+  Example:
+    "decrease volume"
+    "decrease volume level"
+    "volume down"
+-----------------------------------------------------------------------------
+To mute the volume
+  Keywords: ("mute","mute volume")
+
+  This command will mute the volume of the system
+
+  Example:
+    "mute"
+    "mute volume"
+-----------------------------------------------------------------------------
+To unmute the volume
+  Keywords: ("unmute","unmute volume")
+
+  This command will unmute the volume of the system
+
+  Example:
+    "unmute"
+    "unmute volume"
+-----------------------------------------------------------------------------
+To lock the screen
+  Keywords: ("lock","lock screen")
+
+  This command will lock the screen of the system
+
+  Example:
+    "lock"
+    "lock screen"
+    "lock my screen"
+-----------------------------------------------------------------------------
+
+Conversation with the user and Omnitrix:
+
+  Keywords: ("hello",hey->"hay","how are you","are you fine","also good"
+            ,"fine","thankyou","thanks","thank you")
+

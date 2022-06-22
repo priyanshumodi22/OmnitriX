@@ -103,7 +103,7 @@ def news():
   main_page = requests.get(url).json()
   articles = main_page['articles']
 
-  for i in range(len(articles)):
+  for i in range(10):
     print(articles[i]['title'])
     speak(articles[i]['title'])
     print(articles[i]['description'])

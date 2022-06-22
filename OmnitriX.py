@@ -72,32 +72,36 @@ def weather(city):
   # city = self.takeCommand()
   
   # creating url and requests instance
-  url = "https://www.google.com/search?q="+"weather"+city
-  html = requests.get(url).content
-  
-  # getting raw data
-  soup = BeautifulSoup(html, 'html.parser')
-  temp = soup.find('div', attrs={'class': 'BNeawe iBp4i AP7Wnd'}).text
-  str = soup.find('div', attrs={'class': 'BNeawe tAd8D AP7Wnd'}).text
-  
-  # formatting data
-  data = str.split('\n')
-  time = data[0]
-  sky = data[1]
-  
-  # getting all div tag
-  listdiv = soup.findAll('div', attrs={'class': 'BNeawe s3v9rd AP7Wnd'})
-  strd = listdiv[5].text
-  
-  # getting other required data
-  pos = strd.find('Wind')
-  other_data = strd[pos:]
-  
-  print("It's " + time)
-  speak("It's " + time)
-  print("It's "+temp+" in "+city+" and the sky is "+sky)
-  speak("It's "+temp+" in "+city+" and the sky is "+sky)
+  try:
+    url = "https://www.google.com/search?q="+"weather"+city
+    html = requests.get(url).content
 
+    # getting raw data
+    soup = BeautifulSoup(html, 'html.parser')
+    temp = soup.find('div', attrs={'class': 'BNeawe iBp4i AP7Wnd'}).text
+    str = soup.find('div', attrs={'class': 'BNeawe tAd8D AP7Wnd'}).text
+
+    # formatting data
+    data = str.split('\n')
+    time = data[0]
+    sky = data[1]
+
+    # getting all div tag
+    listdiv = soup.findAll('div', attrs={'class': 'BNeawe s3v9rd AP7Wnd'})
+    strd = listdiv[5].text
+
+    # getting other required data
+    pos = strd.find('Wind')
+    other_data = strd[pos:]
+
+    print("It's " + time)
+    speak("It's " + time)
+    print("It's "+temp+" in "+city+" and the sky is "+sky)
+    speak("It's "+temp+" in "+city+" and the sky is "+sky)
+  except Exception as e:
+    print(e)
+    speak("Sorry, I couldn't find the weather for you")
+    speak("Say that again please")
 
 def news():
   url = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=0f21afb989aa4700976dc340cef71caf'
@@ -227,7 +231,7 @@ class MainThread(QThread):
                   print("Sorry, I couldn't find the song.")
                   speak("Sorry, I couldn't find the song.")
             
-            elif 'weather' in self.query:
+            elif 'weather' in self.query or 'temperature' in self.query or 'check weather' in self.query or 'please check weather' in self.query:
               speak("What's the city name?")
               city = self.takeCommand()
               weather(city)
@@ -251,8 +255,8 @@ class MainThread(QThread):
               print(f"It's {tt} {d2}")
               speak(f"It's {tt} {d2}")
 
-            elif 'ok' in self.query or 'okay' in self.query:
-              speak("Anything else?")
+            # elif 'ok' in self.query or 'okay' in self.query:
+            #   speak("Anything else?")
             
             elif 'chrome' in self.query or 'chrome browser' in self.query:
               speak("Opening Chrome")
@@ -348,7 +352,7 @@ class MainThread(QThread):
               speak("Here are the latest news")
               news()
 
-            elif 'jokes' in self.query or 'joke' in self.query:
+            elif 'jokes' in self.query or 'joke' in self.query or 'tell me a joke' in self.query:
               joke = pyjokes.get_joke()
               print(joke)
               speak(joke)
@@ -360,6 +364,8 @@ class MainThread(QThread):
                   print(joke)
                   speak(joke)
                 else:
+                  print("Okay")
+                  speak("Okay")
                   break
 
             elif 'home screen' in self.query or 'desktop' in self.query:

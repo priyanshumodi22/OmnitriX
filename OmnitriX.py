@@ -1,5 +1,3 @@
-import random
-from jmespath import search
 import pyttsx3
 import speech_recognition as sr
 import datetime
@@ -10,7 +8,6 @@ from bs4 import BeautifulSoup
 import requests
 import webbrowser
 import sys
-import json
 import pyjokes
 import pyautogui
 from pyautogui import typewrite
@@ -19,9 +16,7 @@ from keyboard import press
 from keyboard import press_and_release
 from keyboard import write
 import pywhatkit
-import psutil
 import os
-import winsound
 from playsound import playsound
 from newsapi import NewsApiClient
 from PyQt5 import QtWidgets, QtCore, QtGui
